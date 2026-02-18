@@ -3,79 +3,69 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Política de Privacidad — ColmenasPro</title>
+  <title>Privacidad — ColmenasPro</title>
   <meta name="description" content="Política de privacidad de ColmenasPro." />
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background:#0b1220;
-      color:#e6eaf2;
-      line-height:1.6;
-    }
-    .wrap{max-width:900px;margin:0 auto;padding:32px}
-    h1,h2{color:#ffffff}
-    a{color:#22c55e}
-    .mut{color:#a7b0c0}
-    .box{
-      background:#121b2e;
-      border:1px solid #1f2a44;
-      padding:16px;
-      border-radius:14px;
-      margin:18px 0;
-    }
+    .doc{max-width:900px}
+    .doc h1{font-size:34px}
+    .doc h2{margin-top:22px}
+    .doc p,.doc li{color:var(--muted);font-weight:750}
+    .doc a{color:var(--primary)}
+    .doc .box{border:1px solid var(--border);background:rgba(18,27,46,.75);border-radius:var(--r18);padding:16px;margin:14px 0}
+    .topmini{display:flex;gap:10px;align-items:center;margin-bottom:18px}
+    .topmini a{color:var(--muted);text-decoration:none;font-weight:850}
+    .topmini a:hover{color:var(--text)}
   </style>
 </head>
 <body>
-<div class="wrap">
+  <main class="wrap doc">
+    <div class="topmini">
+      <a href="./">← Volver</a>
+      <span class="badge"><span class="dot"></span> Privacidad</span>
+    </div>
 
-<h1>Política de Privacidad</h1>
-<p class="mut">Última actualización: <script>document.write(new Date().getFullYear())</script></p>
+    <h1>Política de Privacidad</h1>
+    <p class="secLead">Última actualización: 2026-02-18</p>
 
-<div class="box">
-<p><strong>ColmenasPro</strong> es una aplicación diseñada para la gestión de colmenas, visitas, producción y genealogía. La privacidad del usuario es un principio fundamental del diseño de la aplicación.</p>
-</div>
+    <div class="box">
+      <p><b>Resumen:</b> ColmenasPro está diseñada para funcionar <b>en local</b>. No envía tus datos a servidores externos de forma automática. El <b>backup</b> lo controlas tú.</p>
+    </div>
 
-<h2>1. Datos almacenados</h2>
-<p>ColmenasPro almacena la información introducida por el usuario directamente en el dispositivo móvil. Esto incluye:</p>
-<ul>
-  <li>Datos de colmenas y núcleos</li>
-  <li>Registros de visitas</li>
-  <li>Datos de producción</li>
-  <li>Información genealógica</li>
-</ul>
+    <h2>1. Qué datos maneja la app</h2>
+    <p>ColmenasPro permite registrar información apícola introducida por el usuario, por ejemplo:</p>
+    <ul>
+      <li>Colmenas y núcleos</li>
+      <li>Visitas y observaciones</li>
+      <li>Producción</li>
+      <li>Genealogía/linajes</li>
+    </ul>
 
-<p>Estos datos <strong>no se envían automáticamente a servidores externos</strong>.</p>
+    <h2>2. Dónde se guardan los datos</h2>
+    <p>Los datos se almacenan <b>en el dispositivo</b>. La aplicación está pensada para poder usarse sin conexión.</p>
 
-<h2>2. Conectividad</h2>
-<p>La aplicación está diseñada para funcionar sin conexión a Internet. No requiere cuenta de usuario obligatoria ni autenticación remota.</p>
+    <h2>3. Copias de seguridad</h2>
+    <p>La app puede ofrecer funciones de <b>exportación/restauración</b> para copias de seguridad. Estas copias las gestiona el usuario (por ejemplo, guardándolas en su almacenamiento, PC o nube personal).</p>
+    <p>ColmenasPro no realiza copias automáticas en servidores externos (salvo que en el futuro se active una función explícita y se actualice esta política).</p>
 
-<h2>3. Copias de seguridad (Backup)</h2>
-<p>ColmenasPro puede permitir la generación manual de copias de seguridad. Dichas copias son gestionadas por el usuario y pueden almacenarse en el propio dispositivo o en un medio elegido por el usuario.</p>
+    <h2>4. Beta privada</h2>
+    <p>Si solicitas acceso a la beta y nos facilitas un correo electrónico, se utilizará <b>únicamente</b> para gestionar la beta (enviarte el acceso y comunicaciones relacionadas). No se vende ni se comparte con terceros.</p>
 
-<p>La aplicación no realiza copias automáticas en servidores externos.</p>
+    <h2>5. Analítica y terceros</h2>
+    <p>En la configuración actual, ColmenasPro no incluye seguimiento comercial del usuario. Si en el futuro se añadiera analítica, se informaría aquí de forma transparente.</p>
 
-<h2>4. Datos personales</h2>
-<p>ColmenasPro no recopila datos personales sensibles ni realiza seguimiento del usuario con fines comerciales.</p>
+    <h2>6. Contacto</h2>
+    <p>Para consultas de privacidad: <a href="mailto:apicolaabouza@gmail.com">apicolaabouza@gmail.com</a></p>
 
-<p>En el caso de la beta privada, si el usuario facilita voluntariamente su correo electrónico para recibir acceso, dicho correo será utilizado únicamente para la gestión de la beta y no será compartido con terceros.</p>
-
-<h2>5. Seguridad</h2>
-<p>La seguridad de los datos depende principalmente de la seguridad del propio dispositivo del usuario. Se recomienda:</p>
-<ul>
-  <li>Proteger el dispositivo con contraseña o biometría</li>
-  <li>Realizar copias de seguridad periódicas</li>
-</ul>
-
-<h2>6. Cambios en esta política</h2>
-<p>Esta política podrá actualizarse para reflejar mejoras o cambios funcionales en la aplicación.</p>
-
-<h2>7. Contacto</h2>
-<p>Para cualquier consulta relacionada con privacidad:</p>
-<p><a href="mailto:TU_CORREO@DOMINIO.COM">TU_CORREO@DOMINIO.COM</a></p>
-
-<p class="mut">© <script>document.write(new Date().getFullYear())</script> ColmenasPro</p>
-
-</div>
+    <footer class="footer" style="margin-top:26px">
+      <div>© <span id="y"></span> ColmenasPro</div>
+      <div class="footerLinks">
+        <a href="terms.html">Términos</a>
+        <a href="./">Inicio</a>
+      </div>
+    </footer>
+  </main>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

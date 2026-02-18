@@ -5,272 +5,51 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0b1220" />
 
-  <title>ColmenasPro ó GestiÛn de colmenas (Beta)</title>
-  <meta name="description" content="ColmenasPro: escanea QR y registra visitas, producciÛn y genealogÌa. Datos en local con backup. Acceso anticipado (beta)." />
+  <title>ColmenasPro ‚Äî Gesti√≥n de colmenas (Beta)</title>
+  <meta name="description" content="ColmenasPro: QR, visitas, producci√≥n y genealog√≠a. Datos en local con backup. Acceso anticipado (beta)." />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="ColmenasPro ó GestiÛn de colmenas (Beta)" />
-  <meta property="og:description" content="QR, visitas, producciÛn y genealogÌa. Datos en local con backup. Solicita acceso a la beta." />
+  <!-- Open Graph (para compartir por WhatsApp/Telegram) -->
+  <meta property="og:title" content="ColmenasPro ‚Äî Gesti√≥n de colmenas (Beta)" />
+  <meta property="og:description" content="QR, visitas, producci√≥n y genealog√≠a. Datos en local con backup. Solicita acceso a la beta." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/img/og-colmenaspro.png" />
+  <meta property="og:image" content="assets/img/og-colmenaspro.svg" />
   <meta property="og:locale" content="es_ES" />
 
-  <!-- Icons (ponlos cuando los tengas) -->
-  <link rel="icon" href="/assets/icons/favicon.ico" />
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
-
-  <style>
-    :root{
-      --bg:#0b1220;
-      --panel:#121b2e;
-      --panel2:#0e1630;
-      --border:#1f2a44;
-      --txt:#e6eaf2;
-      --mut:#a7b0c0;
-      --brand:#22c55e;
-      --brand2:#16a34a;
-      --shadow: 0 14px 40px rgba(0,0,0,.35);
-      --r16:16px;
-      --r22:22px;
-      --max:1120px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 700px at 20% -10%, rgba(34,197,94,.18), transparent 55%),
-                  radial-gradient(900px 500px at 80% 0%, rgba(59,130,246,.14), transparent 55%),
-                  var(--bg);
-      color:var(--txt);
-    }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between; gap:14px;
-      position:sticky; top:0; z-index:20;
-      padding:14px 0;
-      backdrop-filter: blur(10px);
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px; text-decoration:none;
-    }
-    .logo{
-      width:34px; height:34px; border-radius:10px;
-      background: linear-gradient(180deg, rgba(34,197,94,.95), rgba(22,163,74,.8));
-      box-shadow: 0 10px 24px rgba(34,197,94,.22);
-      display:flex; align-items:center; justify-content:center;
-      font-weight:900; color:#05210f;
-    }
-    .brand span{font-weight:850; letter-spacing:.2px}
-    .badge{
-      font-size:12px; color:var(--mut);
-      border:1px solid rgba(42,53,80,.9);
-      padding:6px 10px; border-radius:999px;
-    }
-    .nav{
-      display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end;
-    }
-    .nav a{
-      text-decoration:none; color:var(--mut); font-weight:700; font-size:14px;
-      padding:8px 10px; border-radius:10px;
-    }
-    .nav a:hover{color:var(--txt); background: rgba(255,255,255,.04)}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:8px;
-      background: var(--brand);
-      color:#06210f;
-      padding:12px 16px;
-      border-radius:12px;
-      font-weight:900;
-      text-decoration:none;
-      border:1px solid rgba(34,197,94,.35);
-      box-shadow: 0 14px 34px rgba(34,197,94,.16);
-      cursor:pointer;
-    }
-    .btn:hover{background: var(--brand2)}
-    .btn.secondary{
-      background: transparent;
-      color: var(--txt);
-      border:1px solid rgba(42,53,80,.95);
-      box-shadow:none;
-      font-weight:800;
-    }
-    .btn.secondary:hover{background: rgba(255,255,255,.04)}
-    .hero{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:28px;
-      align-items:center;
-      padding:34px 0 24px;
-    }
-    h1{
-      margin:0 0 12px;
-      font-size:48px;
-      line-height:1.02;
-      letter-spacing:-.5px;
-    }
-    .sub{
-      margin:0 0 18px;
-      font-size:18px;
-      line-height:1.55;
-      color:var(--mut);
-      max-width:60ch;
-    }
-    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
-    .pills{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px}
-    .pill{
-      font-size:12.5px; color:var(--mut);
-      border:1px solid rgba(42,53,80,.95);
-      padding:7px 10px; border-radius:999px;
-      background: rgba(18,27,46,.5);
-    }
-    .mock{
-      border-radius: var(--r22);
-      border: 1px solid rgba(42,53,80,.95);
-      background: linear-gradient(180deg, rgba(18,27,46,.95), rgba(14,22,48,.9));
-      box-shadow: var(--shadow);
-      padding:18px;
-      min-height:420px;
-      position:relative;
-      overflow:hidden;
-    }
-    .mock::before{
-      content:"";
-      position:absolute; inset:-120px -120px auto auto;
-      width:260px; height:260px; border-radius:50%;
-      background: rgba(34,197,94,.20);
-      filter: blur(10px);
-    }
-    .mockTitle{font-weight:900; margin:0 0 6px}
-    .mockText{margin:0 0 14px; color:var(--mut); font-size:14px; line-height:1.5}
-    .shotGrid{
-      display:grid; grid-template-columns: repeat(2,1fr);
-      gap:10px;
-    }
-    .shot{
-      border-radius:16px;
-      border:1px solid rgba(42,53,80,.95);
-      background: rgba(11,18,32,.55);
-      height:150px;
-      overflow:hidden;
-      display:flex; align-items:center; justify-content:center;
-      color:#89a4ff;
-      font-weight:800;
-      font-size:12px;
-    }
-    .shot img{width:100%; height:100%; object-fit:cover; display:block}
-    .sec{padding:26px 0; border-top:1px solid rgba(31,42,68,.85)}
-    .secTitle{margin:0 0 12px; font-size:22px; letter-spacing:-.2px}
-    .grid3{display:grid; grid-template-columns: repeat(3,1fr); gap:14px}
-    .grid2{display:grid; grid-template-columns: repeat(2,1fr); gap:14px}
-    .card{
-      border-radius:18px;
-      border:1px solid rgba(31,42,68,.95);
-      background: rgba(18,27,46,.75);
-      padding:16px;
-    }
-    .card b{display:block; margin-bottom:6px}
-    .card p{margin:0; color:var(--mut); line-height:1.5}
-    .steps{
-      display:grid; grid-template-columns: repeat(3,1fr); gap:14px
-    }
-    .stepHead{display:flex; align-items:center; gap:10px; margin-bottom:6px}
-    .num{
-      width:28px; height:28px; border-radius:999px;
-      display:inline-flex; align-items:center; justify-content:center;
-      background: rgba(34,197,94,.12);
-      border: 1px solid rgba(34,197,94,.25);
-      color: var(--brand);
-      font-weight:950;
-    }
-    .kpi{
-      display:flex; gap:12px; flex-wrap:wrap;
-      color:var(--mut);
-      font-size:13px;
-    }
-    .kpi span{display:inline-flex; align-items:center; gap:8px}
-    .dot{width:8px; height:8px; border-radius:999px; background: var(--brand); display:inline-block}
-    .faq details{
-      border-radius:14px;
-      border:1px solid rgba(31,42,68,.95);
-      background: rgba(18,27,46,.75);
-      padding:12px 14px;
-    }
-    .faq summary{cursor:pointer; font-weight:850}
-    .faq p{margin:10px 0 0; color:var(--mut); line-height:1.55}
-    .form{
-      display:grid; gap:10px;
-    }
-    label{font-size:13px; color:var(--mut); font-weight:750}
-    input, textarea{
-      width:100%;
-      border-radius:12px;
-      border:1px solid rgba(42,53,80,.95);
-      background: rgba(14,22,48,.75);
-      padding:12px;
-      color:var(--txt);
-      outline:none;
-      font-size:15px;
-    }
-    textarea{min-height:110px; resize:vertical}
-    .fine{
-      font-size:12.5px; color:var(--mut); line-height:1.5;
-    }
-    footer{
-      padding:22px 0;
-      color:var(--mut);
-      font-size:14px;
-      border-top:1px solid rgba(31,42,68,.85);
-      display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
-    }
-    footer a{color:var(--mut); text-decoration:none; font-weight:700}
-    footer a:hover{color:var(--txt)}
-    @media (max-width: 980px){
-      .hero{grid-template-columns: 1fr}
-      h1{font-size:38px}
-      .grid3,.steps{grid-template-columns: 1fr}
-      .grid2{grid-template-columns:1fr}
-      .shotGrid{grid-template-columns:1fr 1fr}
-      .mock{min-height:380px}
-    }
-  </style>
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
-  <div class="wrap">
-    <!-- TOP BAR -->
-    <div class="topbar">
-      <a class="brand" href="#top" aria-label="ColmenasPro">
-        <div class="logo">CP</div>
-        <div style="display:flex;flex-direction:column;line-height:1.05">
-          <span>ColmenasPro</span>
-          <span style="font-size:12px;color:var(--mut);font-weight:750">Beta privada</span>
-        </div>
-      </a>
-
-      <div class="nav" role="navigation" aria-label="NavegaciÛn">
-        <a href="#funciones">Funciones</a>
-        <a href="#como">CÛmo funciona</a>
-        <a href="#seguridad">Datos y backup</a>
-        <a href="#beta">Solicitar beta</a>
-        <a class="btn" href="#beta">Acceso anticipado</a>
+  <header class="wrap topbar">
+    <a class="brand" href="./" aria-label="ColmenasPro">
+      <img class="brandLogo" src="assets/img/logo.svg" alt="ColmenasPro" />
+      <div class="brandText">
+        <div class="brandName">ColmenasPro</div>
+        <div class="brandTag">Beta privada ¬∑ Datos en local</div>
       </div>
-    </div>
+    </a>
 
-    <!-- HERO -->
-    <main id="top" class="hero">
-      <section>
-        <div class="badge" style="display:inline-flex;gap:8px;align-items:center;margin-bottom:14px">
+    <nav class="nav">
+      <a href="#funciones">Funciones</a>
+      <a href="#capturas">Capturas</a>
+      <a href="#beta">Acceso</a>
+      <a class="btn" href="#beta">Solicitar beta</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="top">
+      <div class="heroLeft">
+        <div class="badge">
           <span class="dot"></span>
-          Acceso anticipado ∑ sin Google Play por ahora
+          Acceso anticipado ¬∑ sin Google Play por ahora
         </div>
 
-        <h1>Gestiona colmenas en segundos, incluso sin cobertura</h1>
-        <p class="sub">
-          Escanea un <b>QR</b>, abre la colmena o n˙cleo y registra <b>visitas</b>, <b>producciÛn</b> y <b>genealogÌa</b>.
-          Todo queda <b>en local</b> y con <b>backup</b> para estar tranquilo.
+        <h1>Gesti√≥n de colmenas r√°pida y seria, incluso sin cobertura</h1>
+
+        <p class="lead">
+          Escanea un <b>QR</b>, abre la colmena o n√∫cleo al instante y registra <b>visitas</b>, <b>producci√≥n</b> y <b>genealog√≠a</b>.
+          Todo queda <b>en local</b> y con <b>backup</b> bajo tu control.
         </p>
 
         <div class="ctaRow">
@@ -278,174 +57,150 @@
           <a class="btn secondary" href="#funciones">Ver funciones</a>
         </div>
 
-        <div class="pills" aria-label="CaracterÌsticas clave">
-          <span class="pill">Offline (datos en el mÛvil)</span>
-          <span class="pill">Backup local</span>
-          <span class="pill">QR instant·neo</span>
-          <span class="pill">Apiarios + visitas</span>
-          <span class="pill">ProducciÛn e Ìndices</span>
-          <span class="pill">GenealogÌa</span>
+        <div class="pills">
+          <span class="pill">Offline</span>
+          <span class="pill">Backup</span>
+          <span class="pill">QR instant√°neo</span>
+          <span class="pill">Visitas</span>
+          <span class="pill">Producci√≥n</span>
+          <span class="pill">Genealog√≠a</span>
         </div>
 
-        <div class="kpi" style="margin-top:18px">
-          <span><span class="dot"></span> Enfoque: rapidez en campo</span>
-          <span><span class="dot"></span> Sin cuentas obligatorias</span>
-          <span><span class="dot"></span> Control total de datos</span>
+        <div class="trustRow">
+          <div class="trustItem"><span class="tick">?</span> Sin cuentas obligatorias</div>
+          <div class="trustItem"><span class="tick">?</span> Datos bajo tu control</div>
+          <div class="trustItem"><span class="tick">?</span> Dise√±ada para campo</div>
         </div>
-      </section>
+      </div>
 
-      <!-- MOCKUP / CAPTURAS -->
-      <aside class="mock" aria-label="Capturas de la app">
-        <p class="mockTitle">Capturas (aÒade las tuyas)</p>
-        <p class="mockText">Sustituye estos placeholders por im·genes reales en <code>/assets/img/</code>.</p>
-
-        <div class="shotGrid">
-          <div class="shot">
-            <!-- Ejemplo: <img src="/assets/img/screen-1.png" alt="Pantalla: lista de colmenas" /> -->
-            screen-1.png
+      <aside class="heroRight">
+        <div class="phoneMock">
+          <div class="phoneTop">
+            <div class="phoneTitle">ColmenasPro</div>
+            <div class="phoneSub">Vista previa</div>
           </div>
-          <div class="shot">screen-2.png</div>
-          <div class="shot">screen-3.png</div>
-          <div class="shot">screen-4.png</div>
+
+          <div class="mockGrid">
+            <div class="mockCard">
+              <div class="mockCardTitle">Escaneo QR</div>
+              <div class="mockCardText">Abre colmena/n√∫cleo con un toque</div>
+            </div>
+            <div class="mockCard">
+              <div class="mockCardTitle">Visita</div>
+              <div class="mockCardText">Registros r√°pidos y ordenados</div>
+            </div>
+            <div class="mockCard">
+              <div class="mockCardTitle">Producci√≥n</div>
+              <div class="mockCardText">Miel, polen, prop√≥leo‚Ä¶</div>
+            </div>
+            <div class="mockCard">
+              <div class="mockCardTitle">Genealog√≠a</div>
+              <div class="mockCardText">Materna/paterna para selecci√≥n</div>
+            </div>
+          </div>
+
+          <div class="hint">
+            Sustituye esto por capturas reales cuando quieras.
+          </div>
         </div>
       </aside>
-    </main>
+    </section>
 
-    <!-- FUNCIONES -->
-    <section id="funciones" class="sec">
-      <h2 class="secTitle">Funciones clave</h2>
+    <section class="sec" id="funciones">
+      <h2>Funciones clave</h2>
+      <p class="secLead">Lo que necesitas en campo, sin ruido y con consistencia.</p>
+
       <div class="grid3">
         <div class="card">
-          <b>QR instant·neo</b>
-          <p>Escanea y abre directamente la ficha de colmena/n˙cleo para registrar al momento.</p>
+          <div class="cardHead">QR instant√°neo</div>
+          <div class="cardBody">Escanea y entra directamente a la ficha de colmena o n√∫cleo.</div>
         </div>
         <div class="card">
-          <b>Visitas e historial</b>
-          <p>Registro r·pido de revisiones, notas e incidencias. Consulta por fecha y apiario.</p>
+          <div class="cardHead">Visitas e historial</div>
+          <div class="cardBody">Registra revisiones e incidencias y consulta por fecha y apiario.</div>
         </div>
         <div class="card">
-          <b>ProducciÛn e Ìndices</b>
-          <p>Control de miel, polen, propÛleoÖ e indicadores para decidir con datos.</p>
+          <div class="cardHead">Producci√≥n e √≠ndices</div>
+          <div class="cardBody">Control de cosechas e indicadores para decidir con datos.</div>
         </div>
         <div class="card">
-          <b>GenealogÌa</b>
-          <p>Seguimiento materno/paterno para selecciÛn y mejora (ideal para lÌneas de reinas).</p>
+          <div class="cardHead">Genealog√≠a</div>
+          <div class="cardBody">Seguimiento materno/paterno para l√≠neas y selecci√≥n de reinas.</div>
         </div>
         <div class="card">
-          <b>Todo en local</b>
-          <p>Los datos residen en el dispositivo: pensado para el campo y la privacidad.</p>
+          <div class="cardHead">Datos en local</div>
+          <div class="cardBody">Funciona offline: los datos quedan en tu dispositivo.</div>
         </div>
         <div class="card">
-          <b>Backup</b>
-          <p>Copia y restauraciÛn para no perder registros si cambias de mÛvil o reinstalas.</p>
+          <div class="cardHead">Backup</div>
+          <div class="cardBody">Exporta/restaura copias para no perder tu trabajo.</div>
         </div>
       </div>
     </section>
 
-    <!-- C”MO FUNCIONA -->
-    <section id="como" class="sec">
-      <h2 class="secTitle">CÛmo funciona</h2>
-      <div class="steps">
-        <div class="card">
-          <div class="stepHead"><span class="num">1</span><b>Escanea</b></div>
-          <p>Lee el QR de la colmena o n˙cleo desde la app y entra a su ficha en un toque.</p>
-        </div>
-        <div class="card">
-          <div class="stepHead"><span class="num">2</span><b>Registra</b></div>
-          <p>Visitas, producciÛn e incidencias. R·pido y diseÒado para usar con guantes en campo.</p>
-        </div>
-        <div class="card">
-          <div class="stepHead"><span class="num">3</span><b>Analiza</b></div>
-          <p>Consulta historial e indicadores para tomar decisiones: manejo, selecciÛn, producciÛn.</p>
-        </div>
+    <section class="sec" id="capturas">
+      <h2>Capturas</h2>
+      <p class="secLead">Cuando tengas 4‚Äì6 capturas, las pones aqu√≠ y queda ‚Äúde producto‚Äù.</p>
+
+      <div class="shots">
+        <div class="shot">screen-1.png</div>
+        <div class="shot">screen-2.png</div>
+        <div class="shot">screen-3.png</div>
+        <div class="shot">screen-4.png</div>
+      </div>
+
+      <div class="note">
+        Para usar capturas reales: mete im√°genes en <code>assets/img/</code> y sustituye los bloques por
+        <code>&lt;img src="assets/img/screen-1.png"&gt;</code>.
       </div>
     </section>
 
-    <!-- DATOS Y BACKUP -->
-    <section id="seguridad" class="sec">
-      <h2 class="secTitle">Datos y backup</h2>
-      <div class="grid2">
-        <div class="card">
-          <b>Privacidad por diseÒo</b>
-          <p>ColmenasPro est· orientada a funcionar offline. Tus datos permanecen en el dispositivo (salvo que t˙ los exportes).</p>
-        </div>
-        <div class="card">
-          <b>Backup bajo tu control</b>
-          <p>Genera copias de seguridad y restaura cuando lo necesites. Ideal para cambios de mÛvil o reinstalaciones.</p>
-        </div>
-      </div>
-      <p class="fine" style="margin-top:12px">
-        Nota: cuando publiques en Google Play, mantendremos exactamente este enfoque (local + backup) y solo cambiaremos el botÛn de descarga.
-      </p>
-    </section>
+    <section class="sec" id="beta">
+      <h2>Solicitar acceso a la beta</h2>
+      <p class="secLead">Formulario simple (sin backend). Cambia el correo por el tuyo.</p>
 
-    <!-- FAQ -->
-    <section class="sec">
-      <h2 class="secTitle">FAQ</h2>
-      <div class="faq" style="display:grid;gap:10px">
-        <details>
-          <summary>øFunciona sin internet?</summary>
-          <p>SÌ. La app est· pensada para campo y se apoya en datos locales.</p>
-        </details>
-        <details>
-          <summary>øSe puede compartir el APK?</summary>
-          <p>Cualquier APK se puede reenviar. Por eso la beta se gestiona por invitaciÛn y control de acceso (lo normal antes de Play).</p>
-        </details>
-        <details>
-          <summary>øQuÈ incluye el backup?</summary>
-          <p>Copias de seguridad para restaurar tus registros. (En la p·gina de privacidad detallaremos el comportamiento exacto.)</p>
-        </details>
+      <div class="panel">
+        <form class="form" action="mailto:apicolaabouza@gmail.com" method="post" enctype="text/plain">
+          <div class="row">
+            <div>
+              <label>Email</label>
+              <input name="email" type="email" placeholder="tu@email.com" required />
+            </div>
+            <div>
+              <label>M√≥vil (opcional)</label>
+              <input name="movil" type="text" placeholder="Ej: Xiaomi Redmi Note 12 / Samsung A54" />
+            </div>
+          </div>
+
+          <div>
+            <label>Tu caso (opcional)</label>
+            <textarea name="mensaje" placeholder="¬øCu√°ntas colmenas gestionas y qu√© te interesa m√°s (QR, producci√≥n, genealog√≠a, informes)...?"></textarea>
+          </div>
+
+          <div class="ctaRow">
+            <button class="btn" type="submit">Pedir acceso</button>
+            <a class="btn secondary" href="privacy.html">Privacidad</a>
+            <a class="btn secondary" href="terms.html">T√©rminos</a>
+          </div>
+
+          <div class="fine">
+            Consejo: m√°s adelante te puedo cambiar este formulario a Google Forms/Tally para que no dependa del cliente de correo.
+          </div>
+        </form>
       </div>
     </section>
 
-    <!-- BETA FORM -->
-    <section id="beta" class="sec">
-      <h2 class="secTitle">Solicitar acceso a la beta</h2>
-      <p class="sub" style="margin-bottom:14px">
-        DÈjame tu email y te envÌo el acceso cuando te toque. Si me dices tu mÛvil, evito problemas de compatibilidad.
-      </p>
-
-      <!-- Sin backend: mailto (simple). Cambia el correo. -->
-      <form class="form" action="mailto:TU_CORREO@DOMINIO.COM" method="post" enctype="text/plain">
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="tu@email.com" required />
-        </div>
-
-        <div>
-          <label for="phone">MÛvil (opcional)</label>
-          <input id="phone" name="movil" type="text" placeholder="Ej: Xiaomi Redmi Note 12 / Samsung A54" />
-        </div>
-
-        <div>
-          <label for="msg">Tu caso (opcional)</label>
-          <textarea id="msg" name="mensaje" placeholder="øCu·ntas colmenas gestionas y quÈ te interesa m·s: QR, producciÛn, genealogÌa, informes...?"></textarea>
-        </div>
-
-        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
-          <button class="btn" type="submit">Pedir acceso</button>
-          <a class="btn secondary" href="/privacy.html">Ver privacidad</a>
-        </div>
-
-        <p class="fine">
-          Si prefieres un formulario ìrealî (sin abrir el cliente de correo), lo ideal es sustituir esto por Google Forms o Tally.
-          (Cuando quieras, te lo dejo integrado.)
-        </p>
-      </form>
-    </section>
-
-    <footer>
-      <div>© <span id="y"></span> ColmenasPro</div>
-      <div style="display:flex;gap:14px;flex-wrap:wrap">
-        <a href="/privacy.html">Privacidad</a>
-        <a href="/terms.html">TÈrminos</a>
+    <footer class="footer">
+      <div>¬© <span id="y"></span> ColmenasPro</div>
+      <div class="footerLinks">
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">T√©rminos</a>
         <a href="mailto:apicolaabouza@gmail.com">Soporte</a>
       </div>
     </footer>
-  </div>
+  </main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
+
