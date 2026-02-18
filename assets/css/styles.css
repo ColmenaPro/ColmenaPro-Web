@@ -257,3 +257,21 @@ a, a:visited { color: inherit; }
 .nav a:hover, .footerLinks a:hover {
   color: var(--text);
 }
+/* Video responsive */
+.videoWrap{
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  border-radius:20px;
+  border:1px solid var(--border);
+  background:#000;
+  box-shadow: var(--shadow);
+}
+
+.videoWrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
