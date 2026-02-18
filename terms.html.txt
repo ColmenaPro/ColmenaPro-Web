@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Términos de Uso — ColmenasPro</title>
+  <meta name="description" content="Términos de uso de ColmenasPro." />
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:#0b1220;
+      color:#e6eaf2;
+      line-height:1.6;
+    }
+    .wrap{max-width:900px;margin:0 auto;padding:32px}
+    h1,h2{color:#ffffff}
+    a{color:#22c55e}
+    .mut{color:#a7b0c0}
+    .box{
+      background:#121b2e;
+      border:1px solid #1f2a44;
+      padding:16px;
+      border-radius:14px;
+      margin:18px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Términos de Uso</h1>
+<p class="mut">Última actualización: <script>document.write(new Date().getFullYear())</script></p>
+
+<div class="box">
+<p>El uso de ColmenasPro implica la aceptación de los presentes términos.</p>
+</div>
+
+<h2>1. Objeto</h2>
+<p>ColmenasPro es una aplicación de gestión apícola destinada al registro y análisis de datos relacionados con colmenas, producción y genealogía.</p>
+
+<h2>2. Uso de la aplicación</h2>
+<p>El usuario es responsable del uso adecuado de la aplicación y de la veracidad de los datos introducidos.</p>
+
+<h2>3. Responsabilidad</h2>
+<p>ColmenasPro es una herramienta de apoyo a la gestión. Las decisiones técnicas, sanitarias o productivas tomadas por el usuario son de su exclusiva responsabilidad.</p>
+
+<p>No se garantiza la ausencia de errores en versiones beta.</p>
+
+<h2>4. Propiedad intelectual</h2>
+<p>El software, diseño y contenidos asociados a ColmenasPro están protegidos por la normativa vigente en materia de propiedad intelectual.</p>
+
+<h2>5. Beta privada</h2>
+<p>Durante la fase beta:</p>
+<ul>
+  <li>La aplicación puede presentar errores o cambios funcionales.</li>
+  <li>El acceso puede limitarse o revocarse.</li>
+  <li>No se garantiza disponibilidad permanente.</li>
+</ul>
+
+<h2>6. Modificaciones</h2>
+<p>Estos términos podrán modificarse en futuras versiones.</p>
+
+<h2>7. Contacto</h2>
+<p>Para cualquier cuestión relacionada con estos términos:</p>
+<p><a href="mailto:TU_CORREO@DOMINIO.COM">TU_CORREO@DOMINIO.COM</a></p>
+
+<p class="mut">© <script>document.write(new Date().getFullYear())</script> ColmenasPro</p>
+
+</div>
+</body>
+</html>
