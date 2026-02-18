@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacidad — ColmenasPro</title>
-  <meta name="description" content="Política de privacidad de ColmenasPro." />
+  <title>Privacidad — ColmenaPro</title>
+  <meta name="description" content="Política de privacidad de ColmenaPro." />
   <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
   <style>
     .doc{max-width:900px}
     .doc h1{font-size:34px}
@@ -30,36 +30,56 @@
     <p class="secLead">Última actualización: 2026-02-18</p>
 
     <div class="box">
-      <p><b>Resumen:</b> ColmenasPro está diseñada para funcionar <b>en local</b>. No envía tus datos a servidores externos de forma automática. El <b>backup</b> lo controlas tú.</p>
+      <p>
+        <b>Resumen:</b> ColmenaPro está diseñada para funcionar <b>en local</b>.
+        No envía tus datos a servidores externos de forma automática.
+        El <b>backup</b> lo controlas tú.
+      </p>
     </div>
 
     <h2>1. Qué datos maneja la app</h2>
-    <p>ColmenasPro permite registrar información apícola introducida por el usuario, por ejemplo:</p>
+    <p>ColmenaPro permite registrar información apícola introducida por el usuario, por ejemplo:</p>
     <ul>
       <li>Colmenas y núcleos</li>
-      <li>Visitas y observaciones</li>
-      <li>Producción</li>
+      <li>Visitas, observaciones e incidencias</li>
+      <li>Producción (cosechas y cantidades)</li>
       <li>Genealogía/linajes</li>
     </ul>
 
     <h2>2. Dónde se guardan los datos</h2>
-    <p>Los datos se almacenan <b>en el dispositivo</b>. La aplicación está pensada para poder usarse sin conexión.</p>
+    <p>
+      Los datos se almacenan <b>en el dispositivo</b>. La aplicación está pensada para poder usarse sin conexión.
+      No se suben automáticamente a servidores externos.
+    </p>
 
     <h2>3. Copias de seguridad</h2>
-    <p>La app puede ofrecer funciones de <b>exportación/restauración</b> para copias de seguridad. Estas copias las gestiona el usuario (por ejemplo, guardándolas en su almacenamiento, PC o nube personal).</p>
-    <p>ColmenasPro no realiza copias automáticas en servidores externos (salvo que en el futuro se active una función explícita y se actualice esta política).</p>
+    <p>
+      La app puede ofrecer funciones de <b>exportación/restauración</b> para copias de seguridad.
+      Estas copias las gestiona el usuario (por ejemplo, guardándolas en su almacenamiento, PC o nube personal).
+    </p>
+    <p>
+      ColmenaPro no realiza copias automáticas en servidores externos (salvo que en el futuro se active una función
+      explícita y se actualice esta política).
+    </p>
 
-    <h2>4. Beta privada</h2>
-    <p>Si solicitas acceso a la beta y nos facilitas un correo electrónico, se utilizará <b>únicamente</b> para gestionar la beta (enviarte el acceso y comunicaciones relacionadas). No se vende ni se comparte con terceros.</p>
+    <h2>4. Distribución (Google Play)</h2>
+    <p>
+      ColmenaPro se distribuirá a través de Google Play. Google puede recopilar ciertos datos técnicos necesarios
+      para la descarga/actualización de aplicaciones (por ejemplo, según sus propias políticas).
+      ColmenaPro, por su parte, no envía automáticamente el contenido de tus registros apícolas a servidores externos.
+    </p>
 
     <h2>5. Analítica y terceros</h2>
-    <p>En la configuración actual, ColmenasPro no incluye seguimiento comercial del usuario. Si en el futuro se añadiera analítica, se informaría aquí de forma transparente.</p>
+    <p>
+      En la configuración actual, ColmenaPro no incluye seguimiento comercial del usuario.
+      Si en el futuro se añadiera analítica, se informaría aquí de forma transparente.
+    </p>
 
     <h2>6. Contacto</h2>
     <p>Para consultas de privacidad: <a href="mailto:apicolaabouza@gmail.com">apicolaabouza@gmail.com</a></p>
 
     <footer class="footer" style="margin-top:26px">
-      <div>© <span id="y"></span> ColmenasPro</div>
+      <div>© <span id="y"></span> ColmenaPro</div>
       <div class="footerLinks">
         <a href="terms.html">Términos</a>
         <a href="./">Inicio</a>
