@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Términos — ColmenasPro</title>
-  <meta name="description" content="Términos de uso de ColmenasPro." />
+  <title>Términos — ColmenaPro</title>
+  <meta name="description" content="Términos de uso de ColmenaPro." />
   <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
   <style>
     .doc{max-width:900px}
     .doc h1{font-size:34px}
@@ -30,33 +30,55 @@
     <p class="secLead">Última actualización: 2026-02-18</p>
 
     <div class="box">
-      <p><b>Resumen:</b> ColmenasPro es una herramienta de apoyo. En beta puede cambiar y contener errores. Las decisiones apícolas son responsabilidad del usuario.</p>
+      <p>
+        <b>Resumen:</b> ColmenaPro es una herramienta de apoyo para el manejo apícola.
+        No sustituye criterios técnicos, sanitarios o normativos. El usuario es responsable de las decisiones tomadas
+        a partir de la información registrada.
+      </p>
     </div>
 
     <h2>1. Objeto</h2>
-    <p>ColmenasPro es una aplicación destinada al registro y consulta de datos relacionados con manejo apícola (colmenas, visitas, producción y genealogía).</p>
+    <p>
+      ColmenaPro es una aplicación destinada al registro y consulta de datos relacionados con manejo apícola
+      (colmenas, núcleos, visitas, producción y genealogía).
+    </p>
 
     <h2>2. Uso responsable</h2>
-    <p>El usuario es responsable del uso de la aplicación y de la veracidad de los datos introducidos.</p>
+    <p>
+      El usuario es responsable del uso de la aplicación y de la veracidad de los datos introducidos.
+      El usuario debe cumplir la normativa aplicable (sanitaria, trazabilidad, movimientos, etc.) según su zona y actividad.
+    </p>
 
     <h2>3. Limitación de responsabilidad</h2>
-    <p>ColmenasPro es una herramienta de apoyo. No sustituye criterios técnicos, sanitarios o normativos. El usuario asume la responsabilidad de las decisiones tomadas a partir de la información registrada.</p>
+    <p>
+      ColmenaPro es una herramienta de apoyo. No garantiza resultados productivos, sanitarios o económicos.
+      Las decisiones apícolas (tratamientos, manejo, selección, alimentación, movimientos de colmenas, etc.)
+      son responsabilidad del usuario.
+    </p>
 
-    <h2>4. Beta privada</h2>
-    <ul>
-      <li>La aplicación puede presentar errores o cambios funcionales.</li>
-      <li>El acceso puede limitarse o revocarse durante la beta.</li>
-      <li>No se garantiza disponibilidad permanente.</li>
-    </ul>
+    <h2>4. Distribución y actualizaciones (Google Play)</h2>
+    <p>
+      ColmenaPro se distribuirá a través de Google Play. La disponibilidad, instalación y actualizaciones pueden depender
+      de las políticas y del funcionamiento de Google Play y del dispositivo del usuario.
+    </p>
 
     <h2>5. Propiedad intelectual</h2>
-    <p>El software y el contenido asociado a ColmenasPro están protegidos por la normativa de propiedad intelectual aplicable.</p>
+    <p>
+      El software, diseño y contenido asociado a ColmenaPro están protegidos por la normativa de propiedad intelectual aplicable.
+      Queda prohibida la reproducción o distribución no autorizada del software o de sus elementos protegidos.
+    </p>
 
-    <h2>6. Contacto</h2>
+    <h2>6. Cambios en estos términos</h2>
+    <p>
+      Estos términos podrán actualizarse para reflejar mejoras o cambios funcionales en la aplicación.
+      La fecha de “Última actualización” indica la versión vigente publicada en esta web.
+    </p>
+
+    <h2>7. Contacto</h2>
     <p>Soporte: <a href="mailto:apicolaabouza@gmail.com">apicolaabouza@gmail.com</a></p>
 
     <footer class="footer" style="margin-top:26px">
-      <div>© <span id="y"></span> ColmenasPro</div>
+      <div>© <span id="y"></span> ColmenaPro</div>
       <div class="footerLinks">
         <a href="privacy.html">Privacidad</a>
         <a href="./">Inicio</a>
