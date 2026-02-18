@@ -15,12 +15,11 @@
   <meta property="og:locale" content="es_ES" />
 
   <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=5" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=6" />
 </head>
 
 <body>
-
-  <!-- Cuando publiques en Google Play, sustituye false por true y añade tu URL -->
+  <!-- Cuando publiques en Google Play: pon PLAY_READY=true y el enlace real -->
   <script>
     const PLAY_READY = false;
     const PLAY_URL = "https://play.google.com/store/apps/details?id=TU.PAQUETE";
@@ -44,9 +43,9 @@
   </header>
 
   <main class="wrap">
+    <!-- HERO -->
     <section class="hero" id="top">
       <div class="heroLeft">
-
         <div class="badge">
           <span class="dot"></span>
           Próximamente en Google Play
@@ -61,66 +60,17 @@
         </p>
 
         <div class="ctaRow">
-          <a class="btn" id="btnPlayTop">Disponible próximamente</a>
+          <a class="btn" id="btnPlayTop" href="#googleplay">Disponible próximamente</a>
           <a class="btn secondary" href="#funciones">Ver funciones</a>
         </div>
 
-        <<section class="sec" id="funciones">
-  <h2>No es una libreta digital.</h2>
-  <p class="secLead">
-    ColmenaPro está diseñada para apicultura real: campo, selección y toma de decisiones con datos.
-  </p>
-
-  <div class="grid3">
-    <div class="card">
-      <div class="cardHead">Acceso inmediato por QR</div>
-      <div class="cardBody">
-        Cada colmena o núcleo tiene identidad propia.
-        Escaneas y trabajas. Sin búsquedas. Sin menús innecesarios.
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="cardHead">Revisiones estructuradas</div>
-      <div class="cardBody">
-        Registro coherente de puesta, patrón de cría, población,
-        reservas, comportamiento y estado sanitario.
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="cardHead">Genealogía operativa</div>
-      <div class="cardBody">
-        Seguimiento materno y paterno orientado a selección.
-        No es decorativo. Es funcional.
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="cardHead">Producción integrada</div>
-      <div class="cardBody">
-        Cosechas vinculadas a colmenas y campañas.
-        Historial completo sin hojas sueltas.
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="cardHead">Trabajo offline real</div>
-      <div class="cardBody">
-        Diseñada para apiarios sin cobertura.
-        Todo permanece en tu dispositivo.
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="cardHead">Base para evolución futura</div>
-      <div class="cardBody">
-        ColmenaPro no es una versión cerrada.
-        Está pensada para crecer con análisis, índices y mejora genética.
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="pills">
+          <span class="pill">QR en campo</span>
+          <span class="pill">Visitas completas</span>
+          <span class="pill">Producción</span>
+          <span class="pill">Genealogía</span>
+          <span class="pill">Backup local</span>
+        </div>
 
         <div class="trustRow">
           <div class="trustItem"><span class="tick">✓</span> Sin cuenta obligatoria</div>
@@ -135,26 +85,108 @@
             <div class="phoneTitle">ColmenaPro</div>
             <div class="phoneSub">Vista previa</div>
           </div>
+
           <div class="mockGrid">
-            <div class="mockCard"><div class="mockCardTitle">Escaneo QR</div><div class="mockCardText">Acceso inmediato a ficha</div></div>
-            <div class="mockCard"><div class="mockCardTitle">Visita</div><div class="mockCardText">Registro rápido en campo</div></div>
-            <div class="mockCard"><div class="mockCardTitle">Producción</div><div class="mockCardText">Cosechas por campaña</div></div>
-            <div class="mockCard"><div class="mockCardTitle">Genealogía</div><div class="mockCardText">Seguimiento de líneas</div></div>
+            <div class="mockCard">
+              <div class="mockCardTitle">Escaneo QR</div>
+              <div class="mockCardText">Acceso inmediato a ficha</div>
+            </div>
+            <div class="mockCard">
+              <div class="mockCardTitle">Visita</div>
+              <div class="mockCardText">Registro rápido en campo</div>
+            </div>
+            <div class="mockCard">
+              <div class="mockCardTitle">Producción</div>
+              <div class="mockCardText">Cosechas por campaña</div>
+            </div>
+            <div class="mockCard">
+              <div class="mockCardTitle">Genealogía</div>
+              <div class="mockCardText">Seguimiento de líneas</div>
+            </div>
+          </div>
+
+          <div class="hint">
+            Sustituye esta vista por capturas reales cuando lo desees.
           </div>
         </div>
       </aside>
     </section>
 
+    <!-- FUNCIONES (fuera del hero) -->
+    <section class="sec" id="funciones">
+      <h2>No es una libreta digital.</h2>
+      <p class="secLead">
+        ColmenaPro está diseñada para apicultura real: campo, selección y toma de decisiones con datos.
+      </p>
+
+      <div class="grid3">
+        <div class="card">
+          <div class="cardHead">Acceso inmediato por QR</div>
+          <div class="cardBody">
+            Cada colmena o núcleo tiene identidad propia. Escaneas y trabajas. Sin búsquedas. Sin menús innecesarios.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHead">Revisiones estructuradas</div>
+          <div class="cardBody">
+            Registro coherente de puesta, patrón de cría, población, reservas, comportamiento y estado sanitario.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHead">Genealogía operativa</div>
+          <div class="cardBody">
+            Seguimiento materno y paterno orientado a selección. No es decorativo. Es funcional.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHead">Producción integrada</div>
+          <div class="cardBody">
+            Cosechas vinculadas a colmenas y campañas. Historial completo sin hojas sueltas.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHead">Trabajo offline real</div>
+          <div class="cardBody">
+            Diseñada para apiarios sin cobertura. Todo permanece en tu dispositivo.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHead">Base para evolución futura</div>
+          <div class="cardBody">
+            ColmenaPro está pensada para crecer con análisis, índices y mejora genética.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPTURAS -->
+    <section class="sec" id="capturas">
+      <h2>Capturas</h2>
+      <p class="secLead">Añadiremos capturas reales en cuanto estén las pantallas finales.</p>
+
+      <div class="shots">
+        <div class="shot">screen-1.png</div>
+        <div class="shot">screen-2.png</div>
+        <div class="shot">screen-3.png</div>
+        <div class="shot">screen-4.png</div>
+      </div>
+    </section>
+
+    <!-- GOOGLE PLAY -->
     <section class="sec" id="googleplay">
       <h2>Google Play</h2>
       <p class="secLead">
-        ColmenaPro estará disponible próximamente en Google Play.
-        Publicaremos aquí el enlace oficial en cuanto esté activa la ficha.
+        ColmenaPro estará disponible próximamente en Google Play. Publicaremos aquí el enlace oficial en cuanto esté activa la ficha.
       </p>
 
       <div class="panel">
         <div class="ctaRow">
-          <a class="btn" id="btnPlayBottom">Próximamente</a>
+          <a class="btn" id="btnPlayBottom" href="#googleplay">Próximamente</a>
           <a class="btn secondary" href="privacy.html">Privacidad</a>
           <a class="btn secondary" href="terms.html">Términos</a>
         </div>
@@ -170,19 +202,29 @@
     </footer>
   </main>
 
+  <script src="assets/js/main.js"></script>
+
   <script>
+    // Activa los botones solo cuando esté publicado en Google Play
     if (PLAY_READY) {
-      document.getElementById("btnPlayTop").href = PLAY_URL;
-      document.getElementById("btnPlayBottom").href = PLAY_URL;
-      document.getElementById("btnPlayTop").innerText = "Descargar en Google Play";
-      document.getElementById("btnPlayBottom").innerText = "Abrir en Google Play";
+      const a1 = document.getElementById("btnPlayTop");
+      const a2 = document.getElementById("btnPlayBottom");
+      a1.href = PLAY_URL;
+      a2.href = PLAY_URL;
+      a1.target = "_blank"; a2.target = "_blank";
+      a1.rel = "noopener"; a2.rel = "noopener";
+      a1.innerText = "Descargar en Google Play";
+      a2.innerText = "Abrir en Google Play";
     } else {
-      document.getElementById("btnPlayTop").style.opacity = "0.7";
-      document.getElementById("btnPlayBottom").style.opacity = "0.7";
-      document.getElementById("btnPlayTop").style.cursor = "not-allowed";
-      document.getElementById("btnPlayBottom").style.cursor = "not-allowed";
+      const a1 = document.getElementById("btnPlayTop");
+      const a2 = document.getElementById("btnPlayBottom");
+      [a1, a2].forEach(a => {
+        a.style.opacity = "0.7";
+        a.style.cursor = "not-allowed";
+        a.addEventListener("click", (e) => e.preventDefault());
+        a.title = "Enlace de Google Play pendiente";
+      });
     }
   </script>
-
 </body>
 </html>
