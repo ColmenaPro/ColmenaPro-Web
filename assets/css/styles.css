@@ -243,3 +243,17 @@ h1{
   .shots{grid-template-columns:1fr 1fr}
   .row{grid-template-columns:1fr}
 }
+/* Evitar púrpura por enlaces visitados y unificar estilo */
+a, a:visited { color: inherit; }
+
+/* Marca: color controlado */
+.brandName { color: var(--text); }
+
+/* Links de navegación y footer con color consistente */
+.nav a, .nav a:visited,
+.footerLinks a, .footerLinks a:visited {
+  color: var(--muted);
+}
+.nav a:hover, .footerLinks a:hover {
+  color: var(--text);
+}
