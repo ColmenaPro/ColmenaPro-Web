@@ -1,8 +1,7 @@
 :root{
-  /* Paleta: apícola + Material-like (oscuro). Cambiable en 30s */
-  --primary:#F6C445;      /* miel */
+  --primary:#EECF32;      /* oro del logo */
   --onPrimary:#201600;
-  --bg:#0b1220;
+  --bg:#0E3023;           /* verde oscuro del fondo */
   --surface:#121b2e;
   --surface2:#0e1630;
   --border:#1f2a44;
@@ -14,6 +13,7 @@
   --r24:24px;
   --shadow: 0 14px 40px rgba(0,0,0,.35);
 }
+
 
 *{box-sizing:border-box}
 html,body{height:100%}
