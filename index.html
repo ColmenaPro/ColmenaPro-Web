@@ -6,24 +6,24 @@
   <meta name="theme-color" content="#0b1220" />
 
   <title>ColmenaPro — Gestión apícola profesional</title>
-  <meta name="description" content="ColmenaPro: gestión profesional de colmenas. QR, visitas, producción y genealogía. Disponible en Google Play." />
+  <meta name="description" content="ColmenaPro: gestión profesional de colmenas. QR, visitas, producción y genealogía. Próximamente en Google Play." />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="ColmenaPro — Gestión apícola profesional" />
-  <meta property="og:description" content="QR, visitas, producción y genealogía. Disponible en Google Play." />
+  <meta property="og:description" content="QR, visitas, producción y genealogía. Próximamente en Google Play." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/og-colmenapro.svg" />
   <meta property="og:locale" content="es_ES" />
 
   <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=5" />
 </head>
 
 <body>
-  <!-- Cambia este enlace cuando tengas el de Google Play -->
-  <!-- Ejemplo real: https://play.google.com/store/apps/details?id=com.tu.paquete -->
+
+  <!-- Cuando publiques en Google Play, sustituye false por true y añade tu URL -->
   <script>
-    const PLAY_URL = "PLAY_URL";
+    const PLAY_READY = false;
+    const PLAY_URL = "https://play.google.com/store/apps/details?id=TU.PAQUETE";
   </script>
 
   <header class="wrap topbar">
@@ -39,7 +39,7 @@
       <a href="#funciones">Funciones</a>
       <a href="#capturas">Capturas</a>
       <a href="#googleplay">Google Play</a>
-      <a class="btn" href="#googleplay">Descargar</a>
+      <a class="btn" href="#googleplay">Google Play</a>
     </nav>
   </header>
 
@@ -49,7 +49,7 @@
 
         <div class="badge">
           <span class="dot"></span>
-          Disponible en Google Play
+          Próximamente en Google Play
         </div>
 
         <h1>Gestión apícola pensada para el campo.</h1>
@@ -61,7 +61,7 @@
         </p>
 
         <div class="ctaRow">
-          <a class="btn" id="btnPlayTop" href="PLAY_URL" target="_blank" rel="noopener">Descargar en Google Play</a>
+          <a class="btn" id="btnPlayTop">Disponible próximamente</a>
           <a class="btn secondary" href="#funciones">Ver funciones</a>
         </div>
 
@@ -86,100 +86,28 @@
             <div class="phoneTitle">ColmenaPro</div>
             <div class="phoneSub">Vista previa</div>
           </div>
-
           <div class="mockGrid">
-            <div class="mockCard">
-              <div class="mockCardTitle">Escaneo QR</div>
-              <div class="mockCardText">Acceso inmediato a ficha</div>
-            </div>
-            <div class="mockCard">
-              <div class="mockCardTitle">Visita</div>
-              <div class="mockCardText">Registro rápido en campo</div>
-            </div>
-            <div class="mockCard">
-              <div class="mockCardTitle">Producción</div>
-              <div class="mockCardText">Cosechas por campaña</div>
-            </div>
-            <div class="mockCard">
-              <div class="mockCardTitle">Genealogía</div>
-              <div class="mockCardText">Seguimiento de líneas</div>
-            </div>
-          </div>
-
-          <div class="hint">
-            Sustituye esta vista por capturas reales cuando lo desees.
+            <div class="mockCard"><div class="mockCardTitle">Escaneo QR</div><div class="mockCardText">Acceso inmediato a ficha</div></div>
+            <div class="mockCard"><div class="mockCardTitle">Visita</div><div class="mockCardText">Registro rápido en campo</div></div>
+            <div class="mockCard"><div class="mockCardTitle">Producción</div><div class="mockCardText">Cosechas por campaña</div></div>
+            <div class="mockCard"><div class="mockCardTitle">Genealogía</div><div class="mockCardText">Seguimiento de líneas</div></div>
           </div>
         </div>
       </aside>
     </section>
 
-    <section class="sec" id="funciones">
-      <h2>Funciones principales</h2>
-      <p class="secLead">Lo necesario para gestionar colmenas con criterio y datos.</p>
-
-      <div class="grid3">
-        <div class="card">
-          <div class="cardHead">QR de colmena o núcleo</div>
-          <div class="cardBody">Escanea y accede directamente a la ficha correspondiente.</div>
-        </div>
-        <div class="card">
-          <div class="cardHead">Visitas estructuradas</div>
-          <div class="cardBody">Registra puesta, cría, población, reservas e incidencias.</div>
-        </div>
-        <div class="card">
-          <div class="cardHead">Historial claro</div>
-          <div class="cardBody">Consulta revisiones por fecha y apiario sin perder contexto.</div>
-        </div>
-        <div class="card">
-          <div class="cardHead">Producción</div>
-          <div class="cardBody">Control de cosechas y cantidades por campaña.</div>
-        </div>
-        <div class="card">
-          <div class="cardHead">Genealogía</div>
-          <div class="cardBody">Seguimiento materno y paterno para selección.</div>
-        </div>
-        <div class="card">
-          <div class="cardHead">Datos en local</div>
-          <div class="cardBody">Funcionamiento offline con copias de seguridad bajo tu control.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec" id="capturas">
-      <h2>Capturas</h2>
-      <p class="secLead">Añadiremos capturas reales en cuanto estén las pantallas finales.</p>
-
-      <div class="shots">
-        <div class="shot">screen-1.png</div>
-        <div class="shot">screen-2.png</div>
-        <div class="shot">screen-3.png</div>
-        <div class="shot">screen-4.png</div>
-      </div>
-
-      <div class="note">
-        Cuando tengas las capturas: súbelas a <code>assets/img/</code> y reemplaza estos bloques por etiquetas
-        <code>&lt;img src="assets/img/screen-1.png"&gt;</code>.
-      </div>
-    </section>
-
     <section class="sec" id="googleplay">
       <h2>Google Play</h2>
       <p class="secLead">
-        ColmenaPro estará disponible en Google Play. Cuando publiques, solo tendrás que sustituir <code>PLAY_URL</code>
-        por el enlace real de tu ficha.
+        ColmenaPro estará disponible próximamente en Google Play.
+        Publicaremos aquí el enlace oficial en cuanto esté activa la ficha.
       </p>
 
       <div class="panel">
         <div class="ctaRow">
-          <a class="btn" id="btnPlayBottom" href="PLAY_URL" target="_blank" rel="noopener">Abrir en Google Play</a>
-          <a class="btn secondary" href="#top">Volver arriba</a>
+          <a class="btn" id="btnPlayBottom">Próximamente</a>
           <a class="btn secondary" href="privacy.html">Privacidad</a>
           <a class="btn secondary" href="terms.html">Términos</a>
-        </div>
-
-        <div class="fine" style="margin-top:10px">
-          Nota: mientras no tengas el enlace, puedes dejar <code>PLAY_URL</code> tal cual. Cuando lo tengas, reemplázalo por
-          <code>https://play.google.com/store/apps/details?id=...</code>
         </div>
       </div>
     </section>
@@ -189,32 +117,23 @@
       <div class="footerLinks">
         <a href="privacy.html">Privacidad</a>
         <a href="terms.html">Términos</a>
-        <a href="#googleplay">Google Play</a>
       </div>
     </footer>
   </main>
 
-  <script src="assets/js/main.js"></script>
-
   <script>
-    // Aplica el PLAY_URL a los botones, para que solo cambies una vez arriba
-    if (typeof PLAY_URL === "string" && PLAY_URL && PLAY_URL !== "PLAY_URL") {
-      const a1 = document.getElementById("btnPlayTop");
-      const a2 = document.getElementById("btnPlayBottom");
-      if (a1) a1.href = PLAY_URL;
-      if (a2) a2.href = PLAY_URL;
+    if (PLAY_READY) {
+      document.getElementById("btnPlayTop").href = PLAY_URL;
+      document.getElementById("btnPlayBottom").href = PLAY_URL;
+      document.getElementById("btnPlayTop").innerText = "Descargar en Google Play";
+      document.getElementById("btnPlayBottom").innerText = "Abrir en Google Play";
     } else {
-      // Si no hay URL real, desactiva el click (evita llevar a una URL inválida)
-      const a1 = document.getElementById("btnPlayTop");
-      const a2 = document.getElementById("btnPlayBottom");
-      [a1, a2].forEach(a => {
-        if (!a) return;
-        a.addEventListener("click", (e) => e.preventDefault());
-        a.title = "Enlace de Google Play pendiente";
-        a.style.opacity = "0.75";
-        a.style.cursor = "not-allowed";
-      });
+      document.getElementById("btnPlayTop").style.opacity = "0.7";
+      document.getElementById("btnPlayBottom").style.opacity = "0.7";
+      document.getElementById("btnPlayTop").style.cursor = "not-allowed";
+      document.getElementById("btnPlayBottom").style.cursor = "not-allowed";
     }
   </script>
+
 </body>
 </html>
