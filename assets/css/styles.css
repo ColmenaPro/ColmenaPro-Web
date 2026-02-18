@@ -1,12 +1,13 @@
 :root{
-  --primary:#EECF32;      /* oro del logo */
+  --primary:#D4AF37;
   --onPrimary:#201600;
-  --bg:#0E3023;           /* verde oscuro del fondo */
+  --bg:#0C2B1E;
   --surface:#121b2e;
   --surface2:#0e1630;
   --border:#1f2a44;
-  --text:#e6eaf2;
-  --muted:#a7b0c0;
+  --text:#d6dbc7;
+  --muted:#9aa58a;
+
 
   --r12:12px;
   --r18:18px;
