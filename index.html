@@ -5,143 +5,149 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0b1220" />
 
-  <title>ColmenaPro — Gestión de colmenas (Beta)</title>
-  <meta name="description" content="ColmenaPro: QR, visitas, producción y genealogía. Datos en local con backup. Acceso anticipado (beta)." />
+  <title>ColmenaPro — Gestión apícola profesional</title>
+  <meta name="description" content="ColmenaPro: gestión profesional de colmenas. QR, visitas, producción y genealogía. Disponible en Google Play." />
 
-  <!-- Open Graph (para compartir por WhatsApp/Telegram) -->
-  <meta property="og:title" content="ColmenaPro — Gestión de colmenas (Beta)" />
-  <meta property="og:description" content="QR, visitas, producción y genealogía. Datos en local con backup. Solicita acceso a la beta." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="ColmenaPro — Gestión apícola profesional" />
+  <meta property="og:description" content="QR, visitas, producción y genealogía. Disponible en Google Play." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/og-colmenapro.svg" />
   <meta property="og:locale" content="es_ES" />
 
   <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=2" />
-
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
 </head>
 
 <body>
+  <!-- Cambia este enlace cuando tengas el de Google Play -->
+  <!-- Ejemplo real: https://play.google.com/store/apps/details?id=com.tu.paquete -->
+  <script>
+    const PLAY_URL = "PLAY_URL";
+  </script>
+
   <header class="wrap topbar">
     <a class="brand" href="./" aria-label="ColmenaPro">
       <img class="brandLogo" src="assets/img/logo.png" alt="ColmenaPro" />
       <div class="brandText">
-      <div class="brandName">ColmenaPro</div>
-      <div class="brandTag">Beta privada · Datos en local</div>
+        <div class="brandName">ColmenaPro</div>
+        <div class="brandTag">Gestión apícola profesional</div>
       </div>
     </a>
 
     <nav class="nav">
       <a href="#funciones">Funciones</a>
       <a href="#capturas">Capturas</a>
-      <a href="#beta">Acceso</a>
-      <a class="btn" href="#beta">Solicitar beta</a>
+      <a href="#googleplay">Google Play</a>
+      <a class="btn" href="#googleplay">Descargar</a>
     </nav>
   </header>
 
   <main class="wrap">
     <section class="hero" id="top">
       <div class="heroLeft">
+
         <div class="badge">
           <span class="dot"></span>
-          Acceso anticipado · sin Google Play por ahora
+          Disponible en Google Play
         </div>
 
-        <h1>Gestión de colmenas rápida y seria, incluso sin cobertura</h1>
+        <h1>Gestión apícola pensada para el campo.</h1>
 
         <p class="lead">
-          Escanea un <b>QR</b>, abre la colmena o núcleo al instante y registra <b>visitas</b>, <b>producción</b> y <b>genealogía</b>.
-          Todo queda <b>en local</b> y con <b>backup</b> bajo tu control.
+          Escanea el QR y accede al instante a la ficha de tu colmena o núcleo.
+          Registra revisiones, producción y genealogía con un flujo claro y directo.
+          Funciona sin cobertura y los datos permanecen en tu dispositivo.
         </p>
 
         <div class="ctaRow">
-          <a class="btn" href="#beta">Solicitar acceso a la beta</a>
+          <a class="btn" id="btnPlayTop" href="PLAY_URL" target="_blank" rel="noopener">Descargar en Google Play</a>
           <a class="btn secondary" href="#funciones">Ver funciones</a>
         </div>
 
         <div class="pills">
-          <span class="pill">Offline</span>
-          <span class="pill">Backup</span>
-          <span class="pill">QR instantáneo</span>
-          <span class="pill">Visitas</span>
+          <span class="pill">QR en campo</span>
+          <span class="pill">Visitas completas</span>
           <span class="pill">Producción</span>
           <span class="pill">Genealogía</span>
+          <span class="pill">Backup local</span>
         </div>
 
         <div class="trustRow">
-          <div class="trustItem"><span class="tick">?</span> Sin cuentas obligatorias</div>
-          <div class="trustItem"><span class="tick">?</span> Datos bajo tu control</div>
-          <div class="trustItem"><span class="tick">?</span> Diseñada para campo</div>
+          <div class="trustItem"><span class="tick">✓</span> Sin cuenta obligatoria</div>
+          <div class="trustItem"><span class="tick">✓</span> Tus datos son tuyos</div>
+          <div class="trustItem"><span class="tick">✓</span> Diseñada para uso real en apiario</div>
         </div>
       </div>
 
       <aside class="heroRight">
         <div class="phoneMock">
           <div class="phoneTop">
-            <div class="phoneTitle">ColmenasPro</div>
+            <div class="phoneTitle">ColmenaPro</div>
             <div class="phoneSub">Vista previa</div>
           </div>
 
           <div class="mockGrid">
             <div class="mockCard">
               <div class="mockCardTitle">Escaneo QR</div>
-              <div class="mockCardText">Abre colmena/núcleo con un toque</div>
+              <div class="mockCardText">Acceso inmediato a ficha</div>
             </div>
             <div class="mockCard">
               <div class="mockCardTitle">Visita</div>
-              <div class="mockCardText">Registros rápidos y ordenados</div>
+              <div class="mockCardText">Registro rápido en campo</div>
             </div>
             <div class="mockCard">
               <div class="mockCardTitle">Producción</div>
-              <div class="mockCardText">Miel, polen, propóleo…</div>
+              <div class="mockCardText">Cosechas por campaña</div>
             </div>
             <div class="mockCard">
               <div class="mockCardTitle">Genealogía</div>
-              <div class="mockCardText">Materna/paterna para selección</div>
+              <div class="mockCardText">Seguimiento de líneas</div>
             </div>
           </div>
 
           <div class="hint">
-            Sustituye esto por capturas reales cuando quieras.
+            Sustituye esta vista por capturas reales cuando lo desees.
           </div>
         </div>
       </aside>
     </section>
 
     <section class="sec" id="funciones">
-      <h2>Funciones clave</h2>
-      <p class="secLead">Lo que necesitas en campo, sin ruido y con consistencia.</p>
+      <h2>Funciones principales</h2>
+      <p class="secLead">Lo necesario para gestionar colmenas con criterio y datos.</p>
 
       <div class="grid3">
         <div class="card">
-          <div class="cardHead">QR instantáneo</div>
-          <div class="cardBody">Escanea y entra directamente a la ficha de colmena o núcleo.</div>
+          <div class="cardHead">QR de colmena o núcleo</div>
+          <div class="cardBody">Escanea y accede directamente a la ficha correspondiente.</div>
         </div>
         <div class="card">
-          <div class="cardHead">Visitas e historial</div>
-          <div class="cardBody">Registra revisiones e incidencias y consulta por fecha y apiario.</div>
+          <div class="cardHead">Visitas estructuradas</div>
+          <div class="cardBody">Registra puesta, cría, población, reservas e incidencias.</div>
         </div>
         <div class="card">
-          <div class="cardHead">Producción e índices</div>
-          <div class="cardBody">Control de cosechas e indicadores para decidir con datos.</div>
+          <div class="cardHead">Historial claro</div>
+          <div class="cardBody">Consulta revisiones por fecha y apiario sin perder contexto.</div>
+        </div>
+        <div class="card">
+          <div class="cardHead">Producción</div>
+          <div class="cardBody">Control de cosechas y cantidades por campaña.</div>
         </div>
         <div class="card">
           <div class="cardHead">Genealogía</div>
-          <div class="cardBody">Seguimiento materno/paterno para líneas y selección de reinas.</div>
+          <div class="cardBody">Seguimiento materno y paterno para selección.</div>
         </div>
         <div class="card">
           <div class="cardHead">Datos en local</div>
-          <div class="cardBody">Funciona offline: los datos quedan en tu dispositivo.</div>
-        </div>
-        <div class="card">
-          <div class="cardHead">Backup</div>
-          <div class="cardBody">Exporta/restaura copias para no perder tu trabajo.</div>
+          <div class="cardBody">Funcionamiento offline con copias de seguridad bajo tu control.</div>
         </div>
       </div>
     </section>
 
     <section class="sec" id="capturas">
       <h2>Capturas</h2>
-      <p class="secLead">Cuando tengas 4–6 capturas, las pones aquí y queda “de producto”.</p>
+      <p class="secLead">Añadiremos capturas reales en cuanto estén las pantallas finales.</p>
 
       <div class="shots">
         <div class="shot">screen-1.png</div>
@@ -151,57 +157,64 @@
       </div>
 
       <div class="note">
-        Para usar capturas reales: mete imágenes en <code>assets/img/</code> y sustituye los bloques por
+        Cuando tengas las capturas: súbelas a <code>assets/img/</code> y reemplaza estos bloques por etiquetas
         <code>&lt;img src="assets/img/screen-1.png"&gt;</code>.
       </div>
     </section>
 
-    <section class="sec" id="beta">
-      <h2>Solicitar acceso a la beta</h2>
-      <p class="secLead">Formulario simple (sin backend). Cambia el correo por el tuyo.</p>
+    <section class="sec" id="googleplay">
+      <h2>Google Play</h2>
+      <p class="secLead">
+        ColmenaPro estará disponible en Google Play. Cuando publiques, solo tendrás que sustituir <code>PLAY_URL</code>
+        por el enlace real de tu ficha.
+      </p>
 
       <div class="panel">
-        <form class="form" action="mailto:apicolaabouza@gmail.com" method="post" enctype="text/plain">
-          <div class="row">
-            <div>
-              <label>Email</label>
-              <input name="email" type="email" placeholder="tu@email.com" required />
-            </div>
-            <div>
-              <label>Móvil (opcional)</label>
-              <input name="movil" type="text" placeholder="Ej: Xiaomi Redmi Note 12 / Samsung A54" />
-            </div>
-          </div>
+        <div class="ctaRow">
+          <a class="btn" id="btnPlayBottom" href="PLAY_URL" target="_blank" rel="noopener">Abrir en Google Play</a>
+          <a class="btn secondary" href="#top">Volver arriba</a>
+          <a class="btn secondary" href="privacy.html">Privacidad</a>
+          <a class="btn secondary" href="terms.html">Términos</a>
+        </div>
 
-          <div>
-            <label>Tu caso (opcional)</label>
-            <textarea name="mensaje" placeholder="¿Cuántas colmenas gestionas y qué te interesa más (QR, producción, genealogía, informes)...?"></textarea>
-          </div>
-
-          <div class="ctaRow">
-            <button class="btn" type="submit">Pedir acceso</button>
-            <a class="btn secondary" href="privacy.html">Privacidad</a>
-            <a class="btn secondary" href="terms.html">Términos</a>
-          </div>
-
-          <div class="fine">
-            Consejo: más adelante te puedo cambiar este formulario a Google Forms/Tally para que no dependa del cliente de correo.
-          </div>
-        </form>
+        <div class="fine" style="margin-top:10px">
+          Nota: mientras no tengas el enlace, puedes dejar <code>PLAY_URL</code> tal cual. Cuando lo tengas, reemplázalo por
+          <code>https://play.google.com/store/apps/details?id=...</code>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div>© <span id="y"></span> ColmenasPro</div>
+      <div>© <span id="y"></span> ColmenaPro</div>
       <div class="footerLinks">
         <a href="privacy.html">Privacidad</a>
         <a href="terms.html">Términos</a>
-        <a href="mailto:apicolaabouza@gmail.com">Soporte</a>
+        <a href="#googleplay">Google Play</a>
       </div>
     </footer>
   </main>
 
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Aplica el PLAY_URL a los botones, para que solo cambies una vez arriba
+    if (typeof PLAY_URL === "string" && PLAY_URL && PLAY_URL !== "PLAY_URL") {
+      const a1 = document.getElementById("btnPlayTop");
+      const a2 = document.getElementById("btnPlayBottom");
+      if (a1) a1.href = PLAY_URL;
+      if (a2) a2.href = PLAY_URL;
+    } else {
+      // Si no hay URL real, desactiva el click (evita llevar a una URL inválida)
+      const a1 = document.getElementById("btnPlayTop");
+      const a2 = document.getElementById("btnPlayBottom");
+      [a1, a2].forEach(a => {
+        if (!a) return;
+        a.addEventListener("click", (e) => e.preventDefault());
+        a.title = "Enlace de Google Play pendiente";
+        a.style.opacity = "0.75";
+        a.style.cursor = "not-allowed";
+      });
+    }
+  </script>
 </body>
 </html>
-
