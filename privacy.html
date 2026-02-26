@@ -6,7 +6,7 @@
   <title>Privacidad — ColmenaPro</title>
   <meta name="description" content="Política de privacidad de ColmenaPro." />
   <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=7" />
   <style>
     .doc{max-width:900px}
     .doc h1{font-size:34px}
@@ -17,6 +17,8 @@
     .topmini{display:flex;gap:10px;align-items:center;margin-bottom:18px}
     .topmini a{color:var(--muted);text-decoration:none;font-weight:850}
     .topmini a:hover{color:var(--text)}
+    .k{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+       font-size:.95em; padding:.1em .35em; border-radius:8px; border:1px solid var(--border); background:rgba(0,0,0,.18)}
   </style>
 </head>
 <body>
@@ -27,17 +29,27 @@
     </div>
 
     <h1>Política de Privacidad</h1>
-    <p class="secLead">Última actualización: 2026-02-18</p>
+    <p class="secLead">Última actualización: 2026-02-26</p>
 
     <div class="box">
       <p>
         <b>Resumen:</b> ColmenaPro está diseñada para funcionar <b>en local</b>.
-        No envía tus datos a servidores externos de forma automática.
-        El <b>backup</b> lo controlas tú.
+        Por defecto, tus registros (colmenas, visitas, producción, genealogía) se guardan en tu dispositivo.
+        El backend de ColmenaPro se utiliza <b>solo</b> para servicios online (por ejemplo, verificación de acceso PRO/Google Play y funcionalidades que requieran conexión, si las activas).
       </p>
     </div>
 
-    <h2>1. Qué datos maneja la app</h2>
+    <h2>1. Responsable del tratamiento</h2>
+    <p>
+      Responsable: ColmenaPro (proyecto independiente).<br/>
+      Contacto: <a href="mailto:apicolaabouza@gmail.com">apicolaabouza@gmail.com</a>
+    </p>
+    <p class="fine">
+      Este documento es un texto informativo y práctico para usuarios. Si necesitas una versión con datos fiscales/razón social,
+      se puede completar cuando definas la entidad publicadora definitiva.
+    </p>
+
+    <h2>2. Qué datos maneja la app</h2>
     <p>ColmenaPro permite registrar información apícola introducida por el usuario, por ejemplo:</p>
     <ul>
       <li>Colmenas y núcleos</li>
@@ -45,38 +57,105 @@
       <li>Producción (cosechas y cantidades)</li>
       <li>Genealogía/linajes</li>
     </ul>
-
-    <h2>2. Dónde se guardan los datos</h2>
     <p>
-      Los datos se almacenan <b>en el dispositivo</b>. La aplicación está pensada para poder usarse sin conexión.
+      ColmenaPro no requiere que introduzcas nombre, dirección o datos personales para funcionar en modo local.
+    </p>
+
+    <h2>3. Dónde se guardan los datos</h2>
+    <p>
+      Los datos se almacenan <b>en el dispositivo</b>. La app está pensada para poder usarse sin conexión.
       No se suben automáticamente a servidores externos.
     </p>
 
-    <h2>3. Copias de seguridad</h2>
+    <h2>4. Copias de seguridad (backup)</h2>
     <p>
-      La app puede ofrecer funciones de <b>exportación/restauración</b> para copias de seguridad.
-      Estas copias las gestiona el usuario (por ejemplo, guardándolas en su almacenamiento, PC o nube personal).
+      La app puede ofrecer funciones de <b>exportación/restauración</b> para copias de seguridad (por ejemplo, archivos de exportación/ZIP).
+      Estas copias las gestiona el usuario (guardándolas en su almacenamiento, PC o nube personal).
     </p>
     <p>
-      ColmenaPro no realiza copias automáticas en servidores externos (salvo que en el futuro se active una función
-      explícita y se actualice esta política).
-    </p>
-
-    <h2>4. Distribución (Google Play)</h2>
-    <p>
-      ColmenaPro se distribuirá a través de Google Play. Google puede recopilar ciertos datos técnicos necesarios
-      para la descarga/actualización de aplicaciones (por ejemplo, según sus propias políticas).
-      ColmenaPro, por su parte, no envía automáticamente el contenido de tus registros apícolas a servidores externos.
+      ColmenaPro no realiza copias automáticas en servidores externos salvo que en el futuro actives una función online explícita
+      y se actualice esta política.
     </p>
 
-    <h2>5. Analítica y terceros</h2>
+    <h2>5. Backend de ColmenaPro: qué es y cuándo interviene</h2>
     <p>
-      En la configuración actual, ColmenaPro no incluye seguimiento comercial del usuario.
-      Si en el futuro se añadiera analítica, se informaría aquí de forma transparente.
+      ColmenaPro dispone de un servicio backend (API) para soportar <b>funciones online</b>.
+      En la configuración actual, el backend se utiliza principalmente para:
+    </p>
+    <ul>
+      <li><b>Autenticación y autorización</b> de acceso a servicios online (por ejemplo, verificación de acceso PRO).</li>
+      <li><b>Emisión de tokens</b> de acceso (por ejemplo, <span class="k">JWT</span>) para llamadas autenticadas a la API.</li>
+      <li><b>Verificación con Google Play</b> cuando sea necesario (por ejemplo, validación de compra/suscripción y/o integridad de instalación).</li>
+    </ul>
+    <p>
+      Si no usas funciones online, la app puede funcionar en modo local sin necesidad de comunicarse con el backend.
     </p>
 
-    <h2>6. Contacto</h2>
-    <p>Para consultas de privacidad: <a href="mailto:apicolaabouza@gmail.com">apicolaabouza@gmail.com</a></p>
+    <h2>6. Datos técnicos tratados por el backend</h2>
+    <p>
+      Cuando se usa el backend, se pueden tratar datos técnicos mínimos para poder prestar el servicio:
+    </p>
+    <ul>
+      <li><b>Identificador técnico de instalación</b> (por ejemplo, un ID generado por la app para identificar la instalación).</li>
+      <li><b>Tokens</b> de sesión/acceso (por ejemplo, <span class="k">JWT</span>) y datos asociados a su validez (caducidad, plan/entitlements).</li>
+      <li><b>Metadatos de verificación Google Play</b> (por ejemplo, resultados de verificación relacionados con Play Billing / Play Integrity si se usa esa verificación).</li>
+      <li><b>Datos de red</b>: dirección IP y logs técnicos necesarios para seguridad, prevención de abuso y diagnóstico.</li>
+    </ul>
+    <p>
+      El objetivo es <b>seguridad</b>, <b>control de acceso</b> y <b>operación del servicio</b>.
+      No se realiza seguimiento comercial del usuario.
+    </p>
+
+    <h2>7. Contenido apícola y servicios online</h2>
+    <p>
+      El contenido apícola (colmenas, visitas, genealogía, producción) permanece en local por defecto.
+      Si en el futuro activas o se habilitan funciones de sincronización/consulta online (por ejemplo, modo online de genealogía),
+      esta política se actualizará para describir:
+    </p>
+    <ul>
+      <li>Qué datos exactos se envían</li>
+      <li>Con qué finalidad</li>
+      <li>Base legal</li>
+      <li>Plazos de conservación</li>
+    </ul>
+
+    <h2>8. Google Play y servicios de terceros</h2>
+    <p>
+      ColmenaPro se distribuirá a través de Google Play. Google puede tratar datos técnicos necesarios para descarga, actualización,
+      facturación (si hay suscripciones) y seguridad, conforme a sus políticas.
+    </p>
+    <p>
+      ColmenaPro no vende datos personales ni comparte tus registros apícolas con terceros para publicidad.
+    </p>
+
+    <h2>9. Base legal (GDPR)</h2>
+    <ul>
+      <li><b>Ejecución del servicio</b> (art. 6.1.b GDPR): para operar funciones online cuando las uses (autenticación/PRO).</li>
+      <li><b>Interés legítimo</b> (art. 6.1.f GDPR): seguridad, prevención de abuso, y registros técnicos mínimos.</li>
+      <li><b>Consentimiento</b> (art. 6.1.a GDPR): si en el futuro se añadieran analíticas opcionales o funciones adicionales que lo requieran.</li>
+    </ul>
+
+    <h2>10. Conservación</h2>
+    <p>
+      En local: los datos permanecen en tu dispositivo hasta que los elimines o desinstales la app.
+      En backend: los logs técnicos y tokens se conservan el tiempo estrictamente necesario para seguridad y operación
+      (por ejemplo, para detectar abusos, resolver incidencias y mantener sesiones).
+    </p>
+
+    <h2>11. Seguridad</h2>
+    <p>
+      Se aplican medidas técnicas para proteger la API y las sesiones (por ejemplo, emisión de tokens, validaciones y controles de acceso).
+      Aun así, ningún sistema es infalible y se recomienda mantener el dispositivo protegido (bloqueo de pantalla, copias de seguridad propias, etc.).
+    </p>
+
+    <h2>12. Derechos del usuario</h2>
+    <p>
+      Puedes solicitar información, rectificación o supresión de datos vinculados a servicios online (si existiesen datos identificables),
+      y ejercer derechos de acceso/oposición/limitación según corresponda.
+    </p>
+    <p>
+      Contacto: <a href="mailto:apicolaabouza@gmail.com">apicolaabouza@gmail.com</a>
+    </p>
 
     <footer class="footer" style="margin-top:26px">
       <div>© <span id="y"></span> ColmenaPro</div>
