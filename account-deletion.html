@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <title>Eliminación de cuenta y datos — ColmenaPro</title>
+  <meta name="description" content="Cómo solicitar la eliminación de cuenta y datos en ColmenaPro." />
+
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=6" />
+</head>
+
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="./" aria-label="ColmenaPro">
+      <img class="brandLogo" src="assets/img/logo.png" alt="ColmenaPro" />
+      <div class="brandText">
+        <div class="brandName">ColmenaPro</div>
+        <div class="brandTag">Gestión apícola profesional</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="./#funciones">Funciones</a>
+      <a href="./#capturas">Capturas</a>
+      <a href="./#googleplay">Google Play</a>
+      <a href="./#video">Vídeo</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="sec" id="account-deletion">
+      <h2>Eliminación de cuenta y datos</h2>
+      <p class="secLead">
+        ColmenaPro utiliza un identificador técnico de instalación (<strong>installId</strong>) para autenticar el uso de la app.
+        No existe registro con correo electrónico ni contraseña.
+      </p>
+
+      <div class="panel">
+        <h3>Cómo solicitar la eliminación</h3>
+        <ol>
+          <li>
+            Envía un correo a <strong>apicolaabouza@gmail.com</strong> con el asunto:
+            <strong>“Eliminación de cuenta ColmenaPro”</strong>.
+          </li>
+          <li>
+            Incluye tu <strong>ID de cuenta / ID de instalación</strong> (si lo tienes).
+            Si no lo tienes, indícalo y te daremos instrucciones.
+          </li>
+        </ol>
+
+        <p><strong>Plazo:</strong> tramitamos las solicitudes en un máximo de <strong>30 días</strong>.</p>
+      </div>
+
+      <div class="grid3" style="margin-top:16px">
+        <div class="card">
+          <div class="cardHead">Qué datos se eliminan</div>
+          <div class="cardBody">
+            Datos asociados a tu identificador: apiarios, colmenas, núcleos, visitas, producción y cualquier información sincronizada en nuestros servidores,
+            además de tokens/sesiones vinculadas.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHead">Qué puede conservarse</div>
+          <div class="cardBody">
+            Información mínima necesaria por obligaciones legales (p. ej. facturación) y registros de compra/suscripción gestionados por Google Play.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHead">Suscripciones</div>
+          <div class="cardBody">
+            Las suscripciones se gestionan en Google Play. Para cancelar, usa la sección “Suscripciones” de Google Play.
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:24px;opacity:.8">
+        Última actualización: 2026-02-27
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> ColmenaPro</div>
+      <div class="footerLinks">
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="account-deletion.html">Eliminación de cuenta</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
