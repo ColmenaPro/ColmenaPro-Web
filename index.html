@@ -1,249 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b1220" />
-
-  <title>ColmenaPro — Gestión apícola profesional</title>
-  <meta name="description" content="ColmenaPro: gestión profesional de colmenas. QR, visitas, producción y genealogía. Próximamente en Google Play." />
-
-  <meta property="og:title" content="ColmenaPro — Gestión apícola profesional" />
-  <meta property="og:description" content="QR, visitas, producción y genealogía. Próximamente en Google Play." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/og-colmenapro.svg" />
-  <meta property="og:locale" content="es_ES" />
-
-  <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=6" />
+  <meta charset="UTF-8">
+  <title>VespaRadar</title>
 </head>
-
 <body>
-  <!-- Cuando publiques en Google Play: pon PLAY_READY=true y el enlace real -->
-  <script>
-    const PLAY_READY = false;
-    const PLAY_URL = "https://play.google.com/store/apps/details?id=TU.PAQUETE";
-  </script>
 
-  <header class="wrap topbar">
-    <a class="brand" href="./" aria-label="ColmenaPro">
-      <img class="brandLogo" src="assets/img/logo.png" alt="ColmenaPro" />
-      <div class="brandText">
-        <div class="brandName">ColmenaPro</div>
-        <div class="brandTag">Gestión apícola profesional</div>
-      </div>
-    </a>
+  <h1>VespaRadar</h1>
 
-    <nav class="nav">
-      <a href="#funciones">Funciones</a>
-      <a href="#capturas">Capturas</a>
-      <a href="#googleplay">Google Play</a>
-      <a class="btn" href="#googleplay">Google Play</a>
-      <a href="#video">Vídeo</a>
-    </nav>
-  </header>
-
-  <main class="wrap">
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="heroLeft">
-        <div class="badge">
-          <span class="dot"></span>
-          Próximamente en Google Play
-        </div>
-
-        <h1>Gestión apícola pensada para el campo.</h1>
-
-        <p class="lead">
-  Escanea el QR y accede al instante a la ficha de tu colmena o núcleo.
-  Registra revisiones, producción y genealogía con un flujo claro y directo.
-  Funciona sin cobertura. Puedes trabajar offline y sincronizar cuando lo necesites.
-</p>
-<!-- VIDEO -->
-<section class="sec" id="video">
-  <h2>ColmenaPro en acción</h2>
-  <p class="secLead">
-    Un vistazo rápido al flujo real: QR → ficha → visita → registro.
+  <p>
+    VespaRadar es una aplicación para la monitorización de la vespa velutina en apiarios,
+    permitiendo registrar observaciones, gestionar trampas y analizar la presión sobre las colmenas.
   </p>
 
-  <div class="videoWrap">
-    <iframe
-      src="https://www.youtube.com/embed/YkUtF2VQaF4?rel=0&modestbranding=1"
-      title="ColmenaPro en acción"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
+  <h2>Funcionalidades</h2>
+  <ul>
+    <li>Registro de observaciones de vespa</li>
+    <li>Gestión de trampas</li>
+    <li>Cálculo de presión de avispa por apiario</li>
+    <li>Visualización en mapa</li>
+  </ul>
 
-        <div class="ctaRow">
-          <a class="btn" id="btnPlayTop" href="#googleplay">Disponible próximamente</a>
-          <a class="btn secondary" href="#funciones">Ver funciones</a>
-        </div>
+  <h2>Enlaces</h2>
+  <ul>
+    <li><a href="privacy.html">Política de privacidad</a></li>
+    <li><a href="terms.html">Términos y condiciones</a></li>
+    <li><a href="account-deletion.html">Eliminación de cuenta</a></li>
+  </ul>
 
-        <div class="pills">
-          <span class="pill">QR en campo</span>
-          <span class="pill">Visitas completas</span>
-          <span class="pill">Producción</span>
-          <span class="pill">Genealogía</span>
-          <span class="pill">Backup local</span>
-        </div>
-
-        <div class="trustRow">
-          <div class="trustItem"><span class="tick">✓</span> Sin cuenta obligatoria</div>
-          <div class="trustItem"><span class="tick">✓</span> Tus datos son tuyos</div>
-          <div class="trustItem"><span class="tick">✓</span> Diseñada para uso real en apiario</div>
-        </div>
-      </div>
-
-      <aside class="heroRight">
-        <div class="phoneMock">
-          <div class="phoneTop">
-            <div class="phoneTitle">ColmenaPro</div>
-            <div class="phoneSub">Vista previa</div>
-          </div>
-
-          <div class="mockGrid">
-            <div class="mockCard">
-              <div class="mockCardTitle">Escaneo QR</div>
-              <div class="mockCardText">Acceso inmediato a ficha</div>
-            </div>
-            <div class="mockCard">
-              <div class="mockCardTitle">Visita</div>
-              <div class="mockCardText">Registro rápido en campo</div>
-            </div>
-            <div class="mockCard">
-              <div class="mockCardTitle">Producción</div>
-              <div class="mockCardText">Cosechas por campaña</div>
-            </div>
-            <div class="mockCard">
-              <div class="mockCardTitle">Genealogía</div>
-              <div class="mockCardText">Seguimiento de líneas</div>
-            </div>
-          </div>
-
-          <div class="hint">
-            Sustituye esta vista por capturas reales cuando lo desees.
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <!-- FUNCIONES (fuera del hero) -->
-    <section class="sec" id="funciones">
-      <h2>No es una libreta digital.</h2>
-      <p class="secLead">
-        ColmenaPro está diseñada para apicultura real: campo, selección y toma de decisiones con datos.
-      </p>
-
-      <div class="grid3">
-        <div class="card">
-          <div class="cardHead">Acceso inmediato por QR</div>
-          <div class="cardBody">
-            Cada colmena o núcleo tiene identidad propia. Escaneas y trabajas. Sin búsquedas. Sin menús innecesarios.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="cardHead">Revisiones estructuradas</div>
-          <div class="cardBody">
-            Registro coherente de puesta, patrón de cría, población, reservas, comportamiento y estado sanitario.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="cardHead">Genealogía operativa</div>
-          <div class="cardBody">
-            Seguimiento materno y paterno orientado a selección. No es decorativo. Es funcional.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="cardHead">Producción integrada</div>
-          <div class="cardBody">
-            Cosechas vinculadas a colmenas y campañas. Historial completo sin hojas sueltas.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="cardHead">Trabajo offline real</div>
-          <div class="cardBody">
-            Diseñada para apiarios sin cobertura. Todo permanece en tu dispositivo.
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="cardHead">Base para evolución futura</div>
-          <div class="cardBody">
-            ColmenaPro está pensada para crecer con análisis, índices y mejora genética.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAPTURAS -->
-    <section class="sec" id="capturas">
-      <h2>Capturas</h2>
-      <p class="secLead">Añadiremos capturas reales en cuanto estén las pantallas finales.</p>
-
-      <div class="shots">
-        <div class="shot">screen-1.png</div>
-        <div class="shot">screen-2.png</div>
-        <div class="shot">screen-3.png</div>
-        <div class="shot">screen-4.png</div>
-      </div>
-    </section>
-
-    <!-- GOOGLE PLAY -->
-    <section class="sec" id="googleplay">
-      <h2>Google Play</h2>
-      <p class="secLead">
-        ColmenaPro estará disponible próximamente en Google Play. Publicaremos aquí el enlace oficial en cuanto esté activa la ficha.
-      </p>
-
-      <div class="panel">
-        <div class="ctaRow">
-          <a class="btn" id="btnPlayBottom" href="#googleplay">Próximamente</a>
-          <a class="btn secondary" href="privacy.html">Privacidad</a>
-          <a class="btn secondary" href="terms.html">Términos</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div>© <span id="y"></span> ColmenaPro</div>
-      <div class="footerLinks">
-  <a href="privacy.html">Privacidad</a>
-  <a href="terms.html">Términos</a>
-  <a href="account-deletion.html">Eliminación de cuenta</a>
-</div>
-    </footer>
-  </main>
-
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    // Activa los botones solo cuando esté publicado en Google Play
-    if (PLAY_READY) {
-      const a1 = document.getElementById("btnPlayTop");
-      const a2 = document.getElementById("btnPlayBottom");
-      a1.href = PLAY_URL;
-      a2.href = PLAY_URL;
-      a1.target = "_blank"; a2.target = "_blank";
-      a1.rel = "noopener"; a2.rel = "noopener";
-      a1.innerText = "Descargar en Google Play";
-      a2.innerText = "Abrir en Google Play";
-    } else {
-      const a1 = document.getElementById("btnPlayTop");
-      const a2 = document.getElementById("btnPlayBottom");
-      [a1, a2].forEach(a => {
-        a.style.opacity = "0.7";
-        a.style.cursor = "not-allowed";
-        a.addEventListener("click", (e) => e.preventDefault());
-        a.title = "Enlace de Google Play pendiente";
-      });
-    }
-  </script>
 </body>
 </html>
